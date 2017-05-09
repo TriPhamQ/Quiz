@@ -9,14 +9,19 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Tri Pham",
   "license": "ISC",
   "homepage": "https://github.com/TriPhamQ/Quiz",
   "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.15.2",
     "lodash": "^4.17.4",
+    "path": "^0.12.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
